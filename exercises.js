@@ -12,7 +12,7 @@ function normalizeAnswer(str) {
         .replace(/[ăâ]/g, 'a').replace(/î/g, 'i').replace(/[șş]/g, 's').replace(/[țţ]/g, 't')
         .replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ')
         .replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ')
-        .replace(/\s+/g, ' ').replace(/[.!?;:]/g, '');
+        .replace(/\s+/g, ' ').replace(/[.!?;:]/g, '').trim();
 }
 
 function answerMatches(item, userInput) {
